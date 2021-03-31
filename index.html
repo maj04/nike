@@ -1,0 +1,81 @@
+<doctype html>
+<html>
+    <head>
+        <title>NIKE</title>
+        <link rel="stylesheet" type="text/css" href="assest/css/style.css">
+    </head>
+
+    <body>
+        <div class="logo">
+                <div class="logo2">
+                    <h5> NIKE</h5>
+                    <svg width="330" height="200">
+                        <path d="M 100,80 C 20,170,180,124,295,79,M 295,79 C 190,100,70,140,100,80" fill="#9bdc28" stroke="#9bdc28"/>   
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div class="card">
+                <div class="imgBox">
+                    <img src="assest/img/nikeshoe.png">
+                </div>
+                <div class="napis">
+                    <h2>Nike shoes</h2>
+                    <div class="size">
+                        <h3>Size :</h3>
+                        <span>41</span>
+                        <span>42</span>
+                        <span>43</span>
+                        <span>44</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color :</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <div class="box">
+                <div class="opis"> 
+                    <h4>About Nike</h4>
+                    <p>Nike, is an American multinational corporation that is engaged in the design, development, 
+                        manufacturing, and worldwide marketing and sales of footwear, apparel, equipment, accessories, and services. The company 
+                        is headquartered near Beaverton, Oregon, in the Portland metropolitan area. It is the world's largest supplier of athletic shoes and apparel
+                         and a major manufacturer of sports equipment, with revenue in excess of US$37.4 billion in its fiscal year 2020. 
+                         As of 2020, it employed 76,700 people worldwide. In 2020 the brand alone was valued in excess of $32 billion, 
+                         making it the most valuable brand among sports businesses.Previously in 2017, the Nike brand was valued at $29.6 billion.
+                         Nike ranked No. 89 in the 2018 Fortune 500 list of the largest United States corporations by total revenue.</p>
+        <canvas id="myCanvas" width="330" height="200">
+        <script>
+            var c=document.getElementById("myCanvas");
+            var ctx=c.getContext("2d");
+            var endx=140,endy=100,startx=340,starty=100;
+            ctx.clearRect(0,0, 2000, 2000);
+            ctx.fillStyle= "#9bdc28";
+            ctx.strokeStyle="#9bdc28";
+            ctx.beginPath();
+            ctx.moveTo(startx,starty);
+            ctx.bezierCurveTo(150,180,20,200,endx,endy,);
+            ctx.bezierCurveTo(90,170,145,145,startx,starty);
+            ctx.stroke();
+            ctx.fill();
+
+        </script>
+        </canvas>   
+            </div>
+        </div>
+    </div>
+
+    </body>
+</html>
